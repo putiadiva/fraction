@@ -1,6 +1,6 @@
 import React from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom'
-import { Routes } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 
 import Task01s03 from './pages/s03/Task01'
 import Task02s03 from './pages/s03/Task02'
@@ -84,185 +84,181 @@ import Task10s01 from './pages/s01/Task10'
 
 function MyRoutes() {
 	return (
-		<Router>
-			<React.Fragment>
-				{/* <Routes> */}
-				<Route exact path="/s03/nar01" Component={Narration01} />
-				<Route exact path="/s03/nar02" Component={Narration02} />
-				<Route exact path="/s03/nar03" Component={Narration03} />
-				<Route exact path="/s03/nar05" Component={Narration05} />
-				<Route exact path="/s03/nar06" Component={Narration06} />
-				<Route exact path="/s03/nar08" Component={Narration08} />
+		<HashRouter>
+			<Route exact path="/s03/nar01" component={Narration01} />
+			<Route exact path="/s03/nar02" component={Narration02} />
+			<Route exact path="/s03/nar03" component={Narration03} />
+			<Route exact path="/s03/nar05" component={Narration05} />
+			<Route exact path="/s03/nar06" component={Narration06} />
+			<Route exact path="/s03/nar08" component={Narration08} />
 
-				<Route exact path="/s03/task01" Component={Task01s03} />
-				<Route exact path="/s03/task02" Component={Task02s03} />
-				<Route exact path="/s03/task02b" Component={Task02bs03} />
-				<Route exact path="/s03/task03" Component={Task03s03} />
-				<Route exact path="/s03/task04" Component={Task04s03} />
-				<Route exact path="/s03/task05" Component={Task05s03} />
-				<Route exact path="/s03/task06" Component={Task06s03} />
-				<Route exact path="/s03/task07" Component={Task07s03} />
-				<Route exact path="/s03/task08" Component={Task08s03} />
-				<Route exact path="/s03/task09" Component={Task09s03} />
-				<Route exact path="/s03/task10" Component={Task10s03} />
-				<Route exact path="/s03/summary01" Component={Summary01s03} />
-				<Route exact path="/s03/bridging01" Component={Bridging01s03} />
-				<Route
-					exact
-					path="/s03/task01-true"
-					Component={Task01Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/task02-true"
-					Component={Task02Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/task02b-true"
-					Component={Task02bTrues03}
-				/>
-				<Route
-					exact
-					path="/s03/task03-true"
-					Component={Task03Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/task04-true"
-					Component={Task04Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/task05-true"
-					Component={Task05Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/task06-true"
-					Component={Task06Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/task07-true"
-					Component={Task07Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/task08-true"
-					Component={Task08Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/task09-true"
-					Component={Task09Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/task10-true"
-					Component={Task10Trues03}
-				/>
-				<Route
-					exact
-					path="/s03/test-bg"
-					Component={TestBackgrounds03}
-				/>
+			<Route exact path="/s03/task01" component={Task01s03} />
+			<Route exact path="/s03/task02" component={Task02s03} />
+			<Route exact path="/s03/task02b" component={Task02bs03} />
+			<Route exact path="/s03/task03" component={Task03s03} />
+			<Route exact path="/s03/task04" component={Task04s03} />
+			<Route exact path="/s03/task05" component={Task05s03} />
+			<Route exact path="/s03/task06" component={Task06s03} />
+			<Route exact path="/s03/task07" component={Task07s03} />
+			<Route exact path="/s03/task08" component={Task08s03} />
+			<Route exact path="/s03/task09" component={Task09s03} />
+			<Route exact path="/s03/task10" component={Task10s03} />
+			<Route exact path="/s03/summary01" component={Summary01s03} />
+			<Route exact path="/s03/bridging01" component={Bridging01s03} />
+			<Route
+				exact
+				path="/s03/task01-true"
+				component={Task01Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/task02-true"
+				component={Task02Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/task02b-true"
+				component={Task02bTrues03}
+			/>
+			<Route
+				exact
+				path="/s03/task03-true"
+				component={Task03Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/task04-true"
+				component={Task04Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/task05-true"
+				component={Task05Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/task06-true"
+				component={Task06Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/task07-true"
+				component={Task07Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/task08-true"
+				component={Task08Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/task09-true"
+				component={Task09Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/task10-true"
+				component={Task10Trues03}
+			/>
+			<Route
+				exact
+				path="/s03/test-bg"
+				component={TestBackgrounds03}
+			/>
 
-				<Route exact path="/s02/nar01" Component={Narration01s02} />
-				<Route exact path="/s02/nar02" Component={Narration02s02} />
-				<Route exact path="/s02/nar03" Component={Narration03s02} />
-				<Route exact path="/s02/nar05" Component={Narration05s02} />
-				<Route exact path="/s02/nar06" Component={Narration06s02} />
-				<Route exact path="/s02/nar08" Component={Narration08s02} />
+			<Route exact path="/s02/nar01" component={Narration01s02} />
+			<Route exact path="/s02/nar02" component={Narration02s02} />
+			<Route exact path="/s02/nar03" component={Narration03s02} />
+			<Route exact path="/s02/nar05" component={Narration05s02} />
+			<Route exact path="/s02/nar06" component={Narration06s02} />
+			<Route exact path="/s02/nar08" component={Narration08s02} />
 
-				<Route exact path="/s02/task01" Component={Task01s02} />
-				<Route exact path="/s02/task02" Component={Task02s02} />
-				<Route exact path="/s02/task02b" Component={Task02bs02} />
-				<Route exact path="/s02/task03" Component={Task03s02} />
-				<Route exact path="/s02/task04" Component={Task04s02} />
-				<Route exact path="/s02/task05" Component={Task05s02} />
-				<Route exact path="/s02/task07" Component={Task07s02} />
-				<Route exact path="/s02/task06" Component={Task06s02} />
-				<Route exact path="/s02/task08" Component={Task08s02} />
-				<Route exact path="/s02/task09" Component={Task09s02} />
-				<Route exact path="/s02/task10" Component={Task10s02} />
-				<Route exact path="/s02/summary01" Component={Summary01s02} />
-				<Route exact path="/s02/bridging01" Component={Bridging01s02} />
-				<Route
-					exact
-					path="/s02/task01-true"
-					Component={Task01Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/task02-true"
-					Component={Task02Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/task02b-true"
-					Component={Task02bTrues02}
-				/>
-				<Route
-					exact
-					path="/s02/task03-true"
-					Component={Task03Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/task04-true"
-					Component={Task04Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/task05-true"
-					Component={Task05Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/task06-true"
-					Component={Task06Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/task07-true"
-					Component={Task07Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/task08-true"
-					Component={Task08Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/task09-true"
-					Component={Task09Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/task10-true"
-					Component={Task10Trues02}
-				/>
-				<Route
-					exact
-					path="/s02/test-bg"
-					Component={TestBackgrounds02}
-				/>
+			<Route exact path="/s02/task01" component={Task01s02} />
+			<Route exact path="/s02/task02" component={Task02s02} />
+			<Route exact path="/s02/task02b" component={Task02bs02} />
+			<Route exact path="/s02/task03" component={Task03s02} />
+			<Route exact path="/s02/task04" component={Task04s02} />
+			<Route exact path="/s02/task05" component={Task05s02} />
+			<Route exact path="/s02/task07" component={Task07s02} />
+			<Route exact path="/s02/task06" component={Task06s02} />
+			<Route exact path="/s02/task08" component={Task08s02} />
+			<Route exact path="/s02/task09" component={Task09s02} />
+			<Route exact path="/s02/task10" component={Task10s02} />
+			<Route exact path="/s02/summary01" component={Summary01s02} />
+			<Route exact path="/s02/bridging01" component={Bridging01s02} />
+			<Route
+				exact
+				path="/s02/task01-true"
+				component={Task01Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/task02-true"
+				component={Task02Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/task02b-true"
+				component={Task02bTrues02}
+			/>
+			<Route
+				exact
+				path="/s02/task03-true"
+				component={Task03Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/task04-true"
+				component={Task04Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/task05-true"
+				component={Task05Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/task06-true"
+				component={Task06Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/task07-true"
+				component={Task07Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/task08-true"
+				component={Task08Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/task09-true"
+				component={Task09Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/task10-true"
+				component={Task10Trues02}
+			/>
+			<Route
+				exact
+				path="/s02/test-bg"
+				component={TestBackgrounds02}
+			/>
 
-				<Route exact path="/s01/task01" Component={Task01s01} />
-				<Route exact path="/s01/task02" Component={Task02s01} />
-				<Route exact path="/s01/task02b" Component={Task02bs01} />
-				<Route exact path="/s01/task03" Component={Task03s01} />
-				<Route exact path="/s01/task04" Component={Task04s01} />
-				<Route exact path="/s01/task05" Component={Task05s01} />
-				<Route exact path="/s01/task07" Component={Task07s01} />
-				<Route exact path="/s01/task06" Component={Task06s01} />
-				<Route exact path="/s01/task08" Component={Task08s01} />
-				<Route exact path="/s01/task09" Component={Task09s01} />
-				<Route exact path="/s01/task10" Component={Task10s01} />
-				{/* </Routes> */}
-			</React.Fragment>
-		</Router>
+			<Route exact path="/s01/task01" component={Task01s01} />
+			<Route exact path="/s01/task02" component={Task02s01} />
+			<Route exact path="/s01/task02b" component={Task02bs01} />
+			<Route exact path="/s01/task03" component={Task03s01} />
+			<Route exact path="/s01/task04" component={Task04s01} />
+			<Route exact path="/s01/task05" component={Task05s01} />
+			<Route exact path="/s01/task07" component={Task07s01} />
+			<Route exact path="/s01/task06" component={Task06s01} />
+			<Route exact path="/s01/task08" component={Task08s01} />
+			<Route exact path="/s01/task09" component={Task09s01} />
+			<Route exact path="/s01/task10" component={Task10s01} />
+		</HashRouter>
 	)
 }
 
